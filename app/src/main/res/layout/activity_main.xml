@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="SMS"
+        app:layout_constraintEnd_toEndOf="@+id/btncall"
+        app:layout_constraintStart_toStartOf="@+id/btncall"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        app:layout_constraintBottom_toBottomOf="@+id/btnsms"
+        app:layout_constraintEnd_toEndOf="@+id/btnmpesa"
+        app:layout_constraintStart_toStartOf="@+id/btnmpesa"
+        app:layout_constraintTop_toTopOf="@+id/btnsms" />
+
+    <Button
+        android:id="@+id/btncall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="2dp"
+        android:text="CALL"
+        app:layout_constraintEnd_toEndOf="@+id/btnshare"
+        app:layout_constraintStart_toStartOf="@+id/btnwebsite"
+        app:layout_constraintTop_toBottomOf="@+id/btnsms" />
+
+    <Button
+        android:id="@+id/btnmpesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:text="MPESA"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btncall"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="SHARE"
+        app:layout_constraintEnd_toEndOf="@+id/btnwebsite"
+        app:layout_constraintStart_toStartOf="@+id/btnwebsite"
+        app:layout_constraintTop_toBottomOf="@+id/btncall" />
+
+    <Button
+        android:id="@+id/btncamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="59dp"
+        android:text="CAMERA"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnshare"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnwebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="71dp"
+        android:text="WEBSITE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnshare" />
+</androidx.constraintlayout.widget.ConstraintLayout>
